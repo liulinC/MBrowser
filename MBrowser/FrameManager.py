@@ -2,12 +2,13 @@
 
 import logging
 
-from .Const import *
-from .ElementHandle import ElementHandle
-from .EventEmitter import EventEmitter
-from .ExecutionContext import ExecutionContext, JSHandle
+from MBrowser.Const import *
+from MBrowser.ElementHandle import ElementHandle
+from MBrowser.EventEmitter import EventEmitter
+from MBrowser.ExecutionContext import ExecutionContext, JSHandle
 
 __all__ = ['FrameManager', 'Frame']
+
 
 class FrameManager(EventEmitter):
     def __init__(self, client, page):

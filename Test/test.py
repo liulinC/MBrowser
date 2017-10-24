@@ -21,12 +21,10 @@ async def main():
 
     await browser.connect()
     page = await browser.createPage()
-    await page.goto(URL, startHarRecord=False)
+    await page.goto(URL, startHarRecord=True)
     await page.click(INPUT_SELECTOR)
     await page.types(SCH_KEY)
     await page.click(SUBMIT_SELECTOR, waitForLoadFinish=True)
-
-    # await page.getHar(r'c:\Doc\test22.har')
 
     Goodslist_SELECTOR = '#J_goodsList > ul > li'
     GoodsName = 'div > div.p-name.p-name-type-2 > a > em'
@@ -36,6 +34,8 @@ async def main():
     result = await page.evalateFromList(Goodslist_SELECTOR,
                                         dict(goodsName=GoodsName, goodsPrice=GoodsPrice, commits=GoodsCommitNum))
     logging.info('result was {}'.format(result))
+
+    await page.getHar(r'c:\Doc\test22.har')
     # Launcher.killBrowser()
 
 

@@ -2,11 +2,12 @@
 
 import logging
 
-from .Connections import Connection
-from .Const import *
-from .Pages import Page
+from MBrowser.Connections import Connection
+from MBrowser.Const import *
+from MBrowser.Pages import Page
 
 __all__ = ['Browser']
+
 
 class Browser(object):
     def __init__(self, browserWSEndpoint: str = ''):

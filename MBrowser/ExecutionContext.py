@@ -5,11 +5,12 @@ import logging
 import math
 from typing import Any
 
-from . import helper
-from .Const import *
-from .EventEmitter import EventEmitter
+from MBrowser import helper
+from MBrowser.Const import *
+from MBrowser.EventEmitter import EventEmitter
 
 __all__ = ['ExecutionContext', 'JSHandle']
+
 
 class ExecutionContext(EventEmitter):
     def __init__(self, client, contextId, objectHandleFactory):

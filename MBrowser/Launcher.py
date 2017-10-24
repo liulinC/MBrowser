@@ -3,8 +3,8 @@ import logging
 import re
 from subprocess import Popen, PIPE, STDOUT
 
-from .Browser import Browser
-from .Const import BROWSEPATH, HEADLESS
+from MBrowser.Browser import Browser
+from MBrowser.Const import BROWSEPATH, HEADLESS
 
 __all__ = ['Launcher', 'BROWSEPATH', 'HEADLESS']
 

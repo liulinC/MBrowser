@@ -4,16 +4,17 @@ import asyncio
 import logging
 from typing import Any
 
-from . import helper
-from .Const import *
-from .EventEmitter import EventEmitter
-from .FrameManager import Frame
-from .FrameManager import FrameManager
-from .HarParser import HarHandler
-from .Session import Session
-from .Input import Keyboard, Mouse, Touchscreen
+from MBrowser import helper
+from MBrowser.Const import *
+from MBrowser.EventEmitter import EventEmitter
+from MBrowser.FrameManager import Frame
+from MBrowser.FrameManager import FrameManager
+from MBrowser.HarParser import HarHandler
+from MBrowser.Input import Keyboard, Mouse, Touchscreen
+from MBrowser.Session import Session
 
 __all__ = ['Page']
+
 
 class Page(EventEmitter):
     def __init__(self, client: Session):

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 BROWSEPATH = 'BROWSEPATH'
-HEADLESS='headless'
+HEADLESS = 'headless'
 ACK_EVENT = 'ACK_EVENT'
 ACK = 'ack'
 RESULT = 'result'

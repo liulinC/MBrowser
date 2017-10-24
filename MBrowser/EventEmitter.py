@@ -6,7 +6,6 @@ from typing import Any
 
 from MBrowser.Const import TIMEOUT_S
 
-
 __all__ = ['EventEmitter']
 
 _eventCallbacks = {}

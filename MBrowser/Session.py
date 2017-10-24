@@ -4,11 +4,12 @@ import asyncio
 import json
 import logging
 
-from . import EventLoop
-from .Const import *
-from .EventEmitter import EventEmitter
+from MBrowser import EventLoop
+from MBrowser.Const import *
+from MBrowser.EventEmitter import EventEmitter
 
 __all__ = ['Session']
+
 
 class Session(EventEmitter):
     def __init__(self, connection, targetId: str, sessionId: str):

@@ -2,10 +2,11 @@
 
 import asyncio
 
-from .Const import SE
-from .EventEmitter import EventEmitter
+from MBrowser.Const import SE
+from MBrowser.EventEmitter import EventEmitter
 
 __all__ = ['Keyboard', 'Mouse', 'Touchscreen']
+
 
 class Keyboard(EventEmitter):
     def __init__(self, client, log):

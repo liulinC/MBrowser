@@ -7,8 +7,8 @@ import re
 import urllib
 from datetime import datetime
 
-from .Const import *
-from .EventEmitter import EventEmitter
+from MBrowser.Const import *
+from MBrowser.EventEmitter import EventEmitter
 
 
 class harinfo(object):

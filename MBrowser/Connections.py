@@ -8,9 +8,9 @@ import logging
 import websockets
 import websockets.protocol
 
-from . import EventLoop
-from .Const import *
-from .Session import Session
+from MBrowser import EventLoop
+from MBrowser.Const import *
+from MBrowser.Session import Session
 
 __all__ = ['Connection']
 
