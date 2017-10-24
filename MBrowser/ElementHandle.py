@@ -3,11 +3,12 @@
 import logging
 import os
 
-from src import helper
+from MBrowser import helper
 from .Const import *
 from .ExecutionContext import ExecutionContext, JSHandle
 from .Session import Session
 
+__all__ = ['ElementHandle']
 
 class ElementHandle(JSHandle):
     def __init__(self, context: ExecutionContext, client: Session, remoteObject: dict, page: object):

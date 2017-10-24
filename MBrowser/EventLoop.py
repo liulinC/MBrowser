@@ -3,7 +3,7 @@
 import asyncio
 import logging
 
-__all__ = ['loop', 'execute']
+__all__ = ['execute', 'create_future', 'create_task']
 
 loop = asyncio.get_event_loop()
 log = logging.getLogger('Browser.EVENTLOOP')

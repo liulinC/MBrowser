@@ -4,7 +4,10 @@ import logging
 from asyncio import iscoroutine, ensure_future, Future, wait_for
 from typing import Any
 
-from src.Const import TIMEOUT_S
+from MBrowser.Const import TIMEOUT_S
+
+
+__all__ = ['EventEmitter']
 
 _eventCallbacks = {}
 _allEventCallback = []

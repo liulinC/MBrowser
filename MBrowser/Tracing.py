@@ -29,18 +29,18 @@ class Tracing(object):
         self._path = options.path
         self._recording = True
         await self._client.syncsend(
-            tracing.Tracing.start(transferMode='ReturnAsStream', categories=categoriesArray.join(',')))
+            'tracing.Tracing.start', dict(transferMode='ReturnAsStream', categories=categoriesArray.join(',')))
 
     async def stop(self):
-        # contentPromise = new Promise(x => fulfill = x)                  #####///////////////////
+        # contentPromise = new Promise(x => fulfill = x)                  #####
         # self._client.once('Tracing.tracingComplete', event => {
         #        self._readStream(event.stream, this._path).then(fulfill)})
-        await self._client.syncsend(tracing.Tracing.end())
+        result = await self._client.send('tracing.Tracing.end', {})
         self._recording = False
-        return contentPromise
+        return result
 
     async def _readStream(self, handle, path):
-        eof = False
+        '''eof = False
         file = fs.openSync(path, 'w')
         while (not eof):
             response = await self._client.send('IO.read', {handle})
@@ -48,4 +48,4 @@ class Tracing(object):
             if path:
                 fs.writeSync(file, response.data)
         fs.closeSync(file)
-        await self._client.send('IO.close', {handle})
+        await self._client.send('IO.close', {handle})'''

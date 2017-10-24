@@ -4,7 +4,9 @@ import re
 from subprocess import Popen, PIPE, STDOUT
 
 from .Browser import Browser
-from .Const import BROWSEPATH
+from .Const import BROWSEPATH, HEADLESS
+
+__all__ = ['Launcher', 'BROWSEPATH', 'HEADLESS']
 
 CHROMESTARTUPARGS = [
     r'--disable-background-networking',
@@ -45,7 +47,7 @@ class Launcher(object):
         cls._log = logging.getLogger('Launcher.Launcher')
 
         cls.killBrowser()
-        if isinstance(options, dict) and options.get('headless') == True:
+        if isinstance(options, dict) and options.get(HEADLESS) == True:
             CHROMESTARTUPARGS.extend(CHROMESHEADLESS)
 
         if isinstance(options, dict) and options.get(BROWSEPATH):

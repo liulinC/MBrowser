@@ -5,6 +5,7 @@ import asyncio
 from .Const import SE
 from .EventEmitter import EventEmitter
 
+__all__ = ['Keyboard', 'Mouse', 'Touchscreen']
 
 class Keyboard(EventEmitter):
     def __init__(self, client, log):

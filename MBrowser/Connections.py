@@ -12,6 +12,8 @@ from . import EventLoop
 from .Const import *
 from .Session import Session
 
+__all__ = ['Connection']
+
 
 class Singleton(type):
     _instances = {}

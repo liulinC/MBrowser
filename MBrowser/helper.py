@@ -9,6 +9,7 @@ import sys
 from .Const import *
 from .Session import Session
 
+__all__ = ['waitFor']
 
 def dictToObject(d):
     if d.get(METHOD):

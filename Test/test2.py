@@ -3,7 +3,7 @@
 import asyncio
 import logging
 
-from src.Launcher import Launcher
+from MBrowser.Launcher import Launcher
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s:  %(message)s')
 

@@ -13,6 +13,7 @@ from .HarParser import HarHandler
 from .Session import Session
 from .input import Keyboard, Mouse, Touchscreen
 
+__all__ = ['Page']
 
 class Page(EventEmitter):
     def __init__(self, client: Session):

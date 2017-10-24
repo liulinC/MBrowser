@@ -7,6 +7,7 @@ from .ElementHandle import ElementHandle
 from .EventEmitter import EventEmitter
 from .ExecutionContext import ExecutionContext, JSHandle
 
+__all__ = ['FrameManager', 'Frame']
 
 class FrameManager(EventEmitter):
     def __init__(self, client, page):

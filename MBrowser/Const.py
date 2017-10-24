@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 BROWSEPATH = 'BROWSEPATH'
+HEADLESS='headless'
 ACK_EVENT = 'ACK_EVENT'
 ACK = 'ack'
 RESULT = 'result'
@@ -40,5 +41,5 @@ Network_resourceChangedPriority = 'Network.resourceChangedPriority'
 Network_loadingFailed = 'Network.loadingFailed'
 Security_securityStateChanged = 'Security.securityStateChanged'
 
-TIMEOUT_S = 5
+TIMEOUT_S = 10
 MAX_PAYLOAD_SIZE_BYTES = 2 ** 23
