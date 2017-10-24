@@ -11,7 +11,7 @@ from .FrameManager import Frame
 from .FrameManager import FrameManager
 from .HarParser import HarHandler
 from .Session import Session
-from .input import Keyboard, Mouse, Touchscreen
+from .Input import Keyboard, Mouse, Touchscreen
 
 __all__ = ['Page']
 

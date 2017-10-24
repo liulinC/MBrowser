@@ -20,7 +20,7 @@ from MBrowser.EventLoop import execute, create_task,create_future
 from MBrowser.ExecutionContext import ExecutionContext, JSHandle
 from MBrowser.FrameManager import Frame, FrameManager
 from MBrowser.helper import waitFor
-from MBrowser.input import Keyboard, Mouse, Touchscreen
+from MBrowser.Input import Keyboard, Mouse, Touchscreen
 from MBrowser.Launcher import Launcher
 from MBrowser.Pages import Page
 from MBrowser.Session import Session
